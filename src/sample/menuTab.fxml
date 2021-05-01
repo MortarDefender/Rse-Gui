@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" spacing="50.0" stylesheets="@../../ui/css/alert.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label style="-fx-font-size: 35; -fx-font-weight: bold;" text="Menu:" textFill="WHITE" underline="true" />
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="80.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-font-size: 15;" text="Load" />
+            <Button mnemonicParsing="false" style="-fx-font-size: 15;" text="Load Xml File" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-font-size: 15;" text="Save" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ui.StartController2">
+   <tabs>
+      <Tab text="Welcome">
+         <content>
+            <GridPane alignment="CENTER" hgap="10.0" prefHeight="337.0" prefWidth="372.0" styleClass="root" vgap="10.0">
+                <padding>
+                    <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+                </padding>
+                <Text id="welcome-text" text="Welcome" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+                <HBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <Button fx:id="signInButton" alignment="CENTER" contentDisplay="CENTER" onAction="#openFileButtonAction" text="load xml file">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                </HBox>
+                <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <stylesheets>
+                    <URL value="@css/ui.css" />
+                </stylesheets>
+                <columnConstraints>
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                    <RowConstraints />
+                  <RowConstraints />
+                </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
+       <Tab text="Menu">
+           <content>
+               <GridPane alignment="CENTER" hgap="10.0" prefHeight="280.0" prefWidth="310.0" styleClass="root" vgap="10.0">
+                   <padding>
+                       <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+                   </padding>
+                   <Text id="welcome-text" text="MENU" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+                   <HBox alignment="CENTER" spacing="30.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                       <Button fx:id="signInButton3" alignment="CENTER_RIGHT" contentDisplay="CENTER" onAction="#openFileButtonAction" text="save">
+                           <font>
+                               <Font size="20.0" />
+                           </font>
+                       </Button>
+                       <Button fx:id="signInButton4" contentDisplay="CENTER" onAction="#openFileButtonAction" text="load">
+                           <font>
+                               <Font size="20.0" />
+                           </font>
+                       </Button>
+                   </HBox>
+                   <Text fx:id="actiontarget2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                   <stylesheets>
+                       <URL value="@css/ui.css" />
+                   </stylesheets>
+                   <columnConstraints>
+                       <ColumnConstraints />
+                       <ColumnConstraints />
+                   </columnConstraints>
+                   <rowConstraints>
+                       <RowConstraints />
+                       <RowConstraints />
+                       <RowConstraints />
+                       <RowConstraints />
+                       <RowConstraints />
+                       <RowConstraints />
+                       <RowConstraints />
+                   </rowConstraints>
+               </GridPane>
+           </content>
+       </Tab>
+   </tabs>
+</TabPane>

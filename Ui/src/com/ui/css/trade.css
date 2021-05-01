@@ -1,0 +1,20 @@
+.root {
+    -fx-background-image: url("orangeTraees.jpg");  /*  grey || PatternBackground  */
+    /*-fx-background-size: 1000 800;*/
+    -fx-background-position: center center;
+}
+.label {
+    -fx-font-weight: bold;
+}
+.button {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    /*-fx-background-color: linear-gradient(#61a2b1, #2A5058);*/
+    -fx-background-color: linear-gradient(#093028, #237A57);
+}
+
+.table-view .table-cell .filler {
+    -fx-background-color: transparent; /*rgba(255, 255, 255, .7);*/
+}

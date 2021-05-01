@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="com.design.controller.GraphController" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" spacing="10.0" stylesheets="@../../ui/css/graph.css" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label style="-fx-text-fill: white;" text="Stock Price X Time " textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <AreaChart>
+        <xAxis>
+          <CategoryAxis label="Time" side="BOTTOM" tickLabelFill="WHITE" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Price" side="LEFT" tickLabelFill="WHITE" />
+        </yAxis>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </AreaChart>
+      <Button mnemonicParsing="false" text="Back" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="40.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

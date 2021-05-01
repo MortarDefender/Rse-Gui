@@ -1,0 +1,17 @@
+.root {
+    -fx-background-image: url("greenTri.jpg");
+    -fx-background-position: center center;
+    /*-fx-background-color: linear-gradient(#000046, #1CB5E0);*/
+}
+
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, .7); /*transparent;*/
+}
+
+.button {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#4AC29A, #0f3443);
+}

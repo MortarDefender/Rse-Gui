@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@../../ui/css/ui.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="48.0" prefWidth="171.0" text="welcome" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font></Label>
+      <Button contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" text="Load An Xml File" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin></Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>

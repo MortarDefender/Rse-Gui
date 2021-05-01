@@ -1,0 +1,68 @@
+.root {
+    -fx-background-image: url("trees.jpg");  /* try || absBackground */
+    /*-fx-background-repeat: stretch;
+    -fx-background-size: 1400 600;*/
+    -fx-background-position: center center;
+    /*-fx-background-color: linear-gradient(#141E30, #243B55);*/
+}
+
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, .7); /*transparent;*/
+}
+
+.button {
+    -fx-background-radius: 20px;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#093028, #237A57);
+}
+
+.label {
+    -fx-font-size: 15px;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-alignment: CENTER;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #0575E6;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+/*PatternBackground*/

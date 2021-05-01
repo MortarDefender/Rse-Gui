@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" spacing="20.0" stylesheets="@../../ui/css/ui.css"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.design.controller.StartController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="48.0" prefWidth="171.0" text="welcome" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font></Label>
+      <Button fx:id="loadXmlButton" contentDisplay="TOP" graphicTextGap="10.0" mnemonicParsing="false" onAction="#loadXml" style="-fx-font-size: 17;" text="Load An Xml File" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Button>
+      <Label fx:id="exp_title" style="-fx-font-size: 15; -fx-text-fill: red;" text="Label" visible="false">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>

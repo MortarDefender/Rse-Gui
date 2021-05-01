@@ -1,0 +1,14 @@
+.root {
+    -fx-background-image: url("trees.jpg");
+    -fx-background-position: center center;
+}
+
+.button {
+    -fx-background-radius: 20px;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

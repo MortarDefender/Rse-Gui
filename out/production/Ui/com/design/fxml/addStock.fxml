@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../ui/css/alert.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.design.controller.AddStock">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="305.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="358.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label style="-fx-font-size: 25; -fx-font-weight: bold;" text="Add Stock:" textFill="WHITE" underline="true" GridPane.columnIndex="1">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label style="-fx-font-size: 17; -fx-font-weight: bold;" text="Company Name:" textFill="WHITE" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin></Label>
+      <Label style="-fx-font-size: 17; -fx-font-weight: bold;" text="Stock Symbol:" textFill="WHITE" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin></Label>
+      <Label style="-fx-font-size: 17; -fx-font-weight: bold;" text="Stock Shares Amount:" textFill="WHITE" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin></Label>
+      <Label style="-fx-font-size: 17; -fx-font-weight: bold;" text="Stock Total Rate:" textFill="WHITE" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin></Label>
+      <Button mnemonicParsing="false" onAction="#addNewStock" text="Create" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin></Button>
+      <TextField fx:id="totalRate" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="120.0" />
+         </GridPane.margin></TextField>
+      <TextField fx:id="amount" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="120.0" />
+         </GridPane.margin></TextField>
+      <TextField fx:id="symbol" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="120.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="companyName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets right="120.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label fx:id="exp" alignment="CENTER" style="-fx-font-size: 17;" text="exp" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

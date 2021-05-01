@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" spacing="10.0" stylesheets="@../../ui/css/alert.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.design.controller.AdminTabController">
+   <children>
+      <Label style="-fx-font-size: 20; -fx-font-weight: bold;" text="Admin Page:" textAlignment="CENTER" textFill="WHITE" underline="true" />
+      <AnchorPane prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Label style="-fx-font-size: 17;" text="Stock List:" textFill="WHITE" underline="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="allStocksTable" onMouseClicked="#selectRow" prefHeight="400.0" prefWidth="200.0">
+         <columns>
+            <TableColumn prefWidth="166.0" text="company name" />
+            <TableColumn prefWidth="166.0" text="symbol" />
+            <TableColumn prefWidth="167.0" text="quantity" />
+            <TableColumn prefWidth="166.0" text="rate" />
+            <TableColumn prefWidth="166.0" text="total deals" />
+            <TableColumn prefWidth="166.0" text="revolution" />
+         </columns></TableView>
+      <Button fx:id="submit" mnemonicParsing="false" onAction="#adminPage" text="Investigate stock" />
+   </children>
+</VBox>
